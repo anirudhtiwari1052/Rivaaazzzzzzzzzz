@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Rivaazz</title>
+    <link rel="stylesheet" href="C:\Users\GOOD\Desktop\RIVAAZ2\pages\css\login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img data-aos="fade-right" data-aos-delay="150" src="C:\Users\GOOD\Desktop\RIVAAZ2\source\LOGO.jpg" alt="Rivaazz Logo">
+        </div>
+        <nav>
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul data-aos="fade-left" data-aos-delay="150" id="nav-menu">
+                <li><a href="C:\Users\GOOD\Desktop\RIVAAZ2\index.html">HOME</a></li>
+                <li><a href="C:\Users\GOOD\Desktop\RIVAAZ2\pages\gallery.html">GALLERY</a></li>
+                <li><a href="C:\Users\GOOD\Desktop\RIVAAZ2\pages\review.css">REVIEW</a></li>
+                <li><a href="C:\Users\GOOD\Desktop\RIVAAZ2\pages\e-invitation.html">E-invitation</a></li>
+                <li><a href="C:\Users\GOOD\Desktop\RIVAAZ2\pages\contact.html">CONTACT US</a></li>
+                <li>
+                    <a href="C:\Users\GOOD\Desktop\RIVAAZ2\pages\login.html" class="active">
+                        LOGIN <img src="C:\Users\GOOD\Desktop\RIVAAZ2\source\login.jpg" alt="Login Icon" class="login-icon">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="login-form" data-aos="fade-up" data-aos-delay="150">
+        <h1>Login</h1>
+        <form>
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p class="register-link">Don't have an account? <a href="C:\Users\GOOD\Desktop\RIVAAZ2\pages\register.html">Register here</a></p>
+    </section>
+
+    <footer class="disclaimer-bar" data-aos="fade-up" data-aos-delay="150">
+        <p>&copy; 2024 Rivaazz. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:contact@rivaazz.com">contact@rivaazz.com</a></p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 150,
+        });
+
+        // Toggle nav menu on hamburger click
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>

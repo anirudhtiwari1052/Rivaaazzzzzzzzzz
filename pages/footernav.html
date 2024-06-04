@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivaazz Dashboard</title>
+    <link rel="stylesheet" href="C:\Users\GOOD\Desktop\RIVAAZ2\pages\css\footernav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img data-aos="fade-right" data-aos-delay="150" src="C:\Users\GOOD\Desktop\RIVAAZ2\source\LOGO.jpg" alt="Rivaazz Logo">
+        </div>
+        <nav>
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <div class="dashboard">
+        <aside class="sidebar" id="nav-menu">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#gallery">GALLERY</a></li>
+                <li><a href="#reviews">REVIEWS</a></li>
+                <li><a href="#e-invitation">E-INVITATION</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+                <li><a href="#login">LOGIN</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <section id="home" class="content-section">
+                <h1>Welcome to Rivaazz</h1>
+                <!-- Add home content here -->
+            </section>
+
+            <section id="gallery" class="content-section">
+                <h1>Gallery</h1>
+                <!-- Add gallery content here -->
+            </section>
+
+            <section id="reviews" class="content-section">
+                <h1>Reviews</h1>
+                <!-- Add reviews content here -->
+            </section>
+
+            <section id="e-invitation" class="content-section">
+                <h1>E-Invitation</h1>
+                <!-- Add e-invitation content here -->
+            </section>
+
+            <section id="contact" class="content-section">
+                <h1>Contact Us</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <section id="login" class="content-section">
+                <h1>Login</h1>
+                <!-- Add login content here -->
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Rivaazz is dedicated to making your events memorable with our exceptional service and attention to detail.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#e-invitation">E-Invitation</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#login">Login</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:contact@rivaazz.com">contact@rivaazz.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p>
+                    <a href="#">Facebook</a> |
+                    <a href="#">Twitter</a> |
+                    <a href="#">Instagram</a>
+                </p>
+            </div>
+        </div>
+        <div class="disclaimer-bar">
+            <p>&copy; 2024 Rivaazz. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 150,
+        });
+
+        document.getElementById('hamburger').addEventListener('click', function () {
+            document.getElementById('nav-menu').classList.toggle('show');
+        });
+    </script>
+    <script src="C:\Users\GOOD\Desktop\RIVAAZ2\script.js"></script>
+</body>
+
+</html>
